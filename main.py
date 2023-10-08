@@ -16,6 +16,8 @@ window.geometry('300x150')
 title_label = ttk.Label(master = window, text = 'Miles to Kilometers', font = 'Aptos 22 bold')
 title_label.pack()
 
+subtitle_label = ttk.Label(master = window, text = 'Enter the amount of miles below:', font = 'Aptos 10 bold')
+subtitle_label.pack()
 # input field 
 input_frame = ttk.Frame(master = window)
 entry_int = tk.IntVar()
@@ -29,9 +31,9 @@ input_frame.pack(pady =  10)
 output_string = tk.StringVar()
 output_label = ttk.Label(master = window,
                           text = 'Output', 
-                          font = 'aptos 16', 
+                          font = 'aptos 18', 
                           textvariable = output_string)
-output_label.pack(pady = 10)
+output_label.pack(pady = 13)
 
 # run 
 window.mainloop()
